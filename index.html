@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dungeons and Dragons</title>
+        <script src="index.js"></script>
+        <script src="bonus.js"></script>
+    </head>
+
+    <body onload="test();">
+
+        <div>
+            <div>
+            <p>Character Name</p>
+            <input type="text" name="Character Name"/>
+            </div>
+        </div>
+
+        <div>
+
+            <select id="Strength" onchange="STRAbilityScore()">
+                <option value="1" class="value1"></option>
+                <option value="2" class="value2"></option>
+                <option value="3" class="value3"></option>
+                <option value="4" class="value4"></option>
+                <option value="5" class="value5"></option>
+                <option value="6" class="value6"></option>
+            </select>
+            <br>
+            <button onclick="decreaseStat(1)">
+                -
+              </button>
+              <p id="001"></p>
+              <button onclick="increaseStat(1)">
+                +
+              </button>
+
+              <br>
+
+            <select id="Dexterity" onchange="DEXAbilityScore()">
+                <option value="1" class="value1"></option>
+                <option value="2" class="value2"></option>
+                <option value="3" class="value3"></option>
+                <option value="4" class="value4"></option>
+                <option value="5" class="value5"></option>
+                <option value="6" class="value6"></option>
+            </select>
+            <br>
+            <button onclick="decreaseStat(2)">
+                -
+              </button>
+              <p id="002"></p>
+              <button onclick="increaseStat(2)">
+                +
+              </button>
+
+              <br>
+
+            <select id="Constitution" onchange="CONAbilityScore()">
+                <option value="1" class="value1"></option>
+                <option value="2" class="value2"></option>
+                <option value="3" class="value3"></option>
+                <option value="4" class="value4"></option>
+                <option value="5" class="value5"></option>
+                <option value="6" class="value6"></option>
+            </select>
+            <br>
+            <button onclick="decreaseStat(3)">
+                -
+              </button>
+              <p id="003"></p>
+              <button onclick="increaseStat(3)">
+                +
+              </button>
+
+              <br>
+
+            <select id="Intelligence" onchange="INTAbilityScore()">
+                <option value="1" class="value1"></option>
+                <option value="2" class="value2"></option>
+                <option value="3" class="value3"></option>
+                <option value="4" class="value4"></option>
+                <option value="5" class="value5"></option>
+                <option value="6" class="value6"></option>
+            </select>
+            <br>
+            <button onclick="decreaseStat(4)">
+                -
+              </button>
+              <p id="004"></p>
+              <button onclick="increaseStat(4)">
+                +
+              </button>
+
+              <br>
+
+            <select id="Wisdom" onchange="WISAbilityScore()">
+                <option value="1" class="value1"></option>
+                <option value="2" class="value2"></option>
+                <option value="3" class="value3"></option>
+                <option value="4" class="value4"></option>
+                <option value="5" class="value5"></option>
+                <option value="6" class="value6"></option>
+            </select>
+            <br>
+            <button onclick="decreaseStat(5)">
+                -
+              </button>
+            <p id="005"></p>
+            <button onclick="increaseStat(5)">
+              +
+            </button>
+
+            <br>
+
+            <select id="Charisma" onchange="CHAAbilityScore()">
+                <option value="1" class="value1"></option>
+                <option value="2" class="value2"></option>
+                <option value="3" class="value3"></option>
+                <option value="4" class="value4"></option>
+                <option value="5" class="value5"></option>
+                <option value="6" class="value6"></option>
+            </select>
+            <br>
+            <button onclick="decreaseStat(6)">
+                -
+              </button>
+            <p id="006"></p>
+            <button onclick="increaseStat(6)">
+              +
+            </button>
+
+        </div>
+    </body>
+</html>
