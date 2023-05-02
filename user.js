@@ -175,17 +175,17 @@ function youFat() {
 
     if(raceVal === "Dragonborn") {
         weight = 175
-        weight *= Math.floor(Math.random() * 11) + 2;
+        weight *= Math.floor(Math.random() * 10) + 2;
         console.log(weight);
         document.getElementById("Weight").innerText = weight + " Lbs";
     }else if(raceVal === "Dwarf") {
         weight = 130;
-        weight *= Math.floor(Math.random() * 11) + 2;
+        weight *= Math.floor(Math.random() * 10) + 2;
         console.log(weight);
         document.getElementById("Weight").innerText = weight + " Lbs";
     }else if(raceVal === "Elf") {
         weight = 100;
-        weight *= Math.floor(Math.random() * 3) + 1;
+        weight *= Math.floor(Math.random() * 4) + 1;
         console.log(weight);
         document.getElementById("Weight").innerText = weight + " Lbs";
     }else if(raceVal === "Gnome") {
@@ -193,7 +193,7 @@ function youFat() {
         document.getElementById("Weight").innerText = weight + " Lbs";
     }else if(raceVal === "Half-Elf") {
         weight = 110;
-        weight *= Math.floor(Math.random() * 7) + 2;
+        weight *= Math.floor(Math.random() * 6) + 2;
         console.log(weight);
         document.getElementById("Weight").innerText = weight + " Lbs";
     }else if(raceVal === "Halfling") {
@@ -202,17 +202,17 @@ function youFat() {
         document.getElementById("Weight").innerText = weight + " Lbs";
     }else if(raceVal === "Half-Orc"){
         weight = 140;
-        weight *= Math.floor(Math.random() * 11) + 2;
+        weight *= Math.floor(Math.random() * 10) + 2;
         console.log(weight);
         document.getElementById("Weight").innerText = weight + " Lbs";
     }else if(raceVal === "Human") {
         weight = 110;
-        weight *= Math.floor(Math.random() * 7) + 2;
+        weight *= Math.floor(Math.random() * 6) + 2;
         console.log(weight);
         document.getElementById("Weight").innerText = weight + " Lbs";
     }else if(raceVal === "Tiefling") {
         weight = 110;
-        weight *= Math.floor(Math.random() * 7) + 2;
+        weight *= Math.floor(Math.random() * 6) + 2;
         console.log(weight);
         document.getElementById("Weight").innerText = weight + " Lbs";
     }
