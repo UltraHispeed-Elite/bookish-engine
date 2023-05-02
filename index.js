@@ -21,6 +21,11 @@ var update1, update2, update3, update4, update5, update6;
 
 var AA1, AA2, AA3, AA4, AA5, AA6;
 
+var oneCounterA = 0;
+var oneCounterB = 0;
+var oneCounterC = 0;
+var oneCounterD = 0;
+
 // Define function to generate random numbers and display them
 function test() {
     let a;
@@ -34,19 +39,23 @@ function test() {
     for(let i = 0; i < 6; i++) {
         do {
             a = Math.floor(Math.random() * 6) + 1;
-        } while(a===1);
+            oneCounterA++;
+        } while(a===1 && oneCounterA<3);
 
         do {
             b = Math.floor(Math.random() * 6) + 1;
-        } while(b===1);
+            oneCounterB++;
+        } while(b===1 && oneCounterB<3);
 
         do {
             c = Math.floor(Math.random() * 6) + 1;
-        } while(c===1);
+            oneCounterC++;
+        } while(c===1 && oneCounterC<3);
 
         do {
             d = Math.floor(Math.random() * 6) + 1;
-        } while(d===1);
+            oneCounterD++;
+        } while(d===1 && oneCounterD<3);
 
         let arr = [a, b, c, d];
 
