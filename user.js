@@ -1,5 +1,7 @@
 var name, user,  level, levelTotal;
 
+var weight;
+
 var Barbarian, Bard, Cleric, Druid, Fighter, Monk, Paladin, Ranger, Rogue, Sorcerer, Warlock, Wizard;
 
 var classLevel = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
@@ -163,5 +165,55 @@ function playerLevel() {
                 //level += Wizard
             break;
         }
+    }
+}
+
+function youFat() {
+    var raceVal = document.getElementById("Species").value;
+
+    var weight;
+
+    if(raceVal === "Dragonborn") {
+        weight = 175
+        weight *= Math.floor(Math.random() * 11) + 2;
+        console.log(weight);
+        document.getElementById("Weight").innerText = weight + " Lbs";
+    }else if(raceVal === "Dwarf") {
+        weight = 130;
+        weight *= Math.floor(Math.random() * 11) + 2;
+        console.log(weight);
+        document.getElementById("Weight").innerText = weight + " Lbs";
+    }else if(raceVal === "Elf") {
+        weight = 100;
+        weight *= Math.floor(Math.random() * 3) + 1;
+        console.log(weight);
+        document.getElementById("Weight").innerText = weight + " Lbs";
+    }else if(raceVal === "Gnome") {
+        weight = 35;
+        document.getElementById("Weight").innerText = weight + " Lbs";
+    }else if(raceVal === "Half-Elf") {
+        weight = 110;
+        weight *= Math.floor(Math.random() * 7) + 2;
+        console.log(weight);
+        document.getElementById("Weight").innerText = weight + " Lbs";
+    }else if(raceVal === "Halfling") {
+        weight = 35;
+        console.log(weight);
+        document.getElementById("Weight").innerText = weight + " Lbs";
+    }else if(raceVal === "Half-Orc"){
+        weight = 140;
+        weight *= Math.floor(Math.random() * 11) + 2;
+        console.log(weight);
+        document.getElementById("Weight").innerText = weight + " Lbs";
+    }else if(raceVal === "Human") {
+        weight = 110;
+        weight *= Math.floor(Math.random() * 7) + 2;
+        console.log(weight);
+        document.getElementById("Weight").innerText = weight + " Lbs";
+    }else if(raceVal === "Tiefling") {
+        weight = 110;
+        weight *= Math.floor(Math.random() * 7) + 2;
+        console.log(weight);
+        document.getElementById("Weight").innerText = weight + " Lbs";
     }
 }
