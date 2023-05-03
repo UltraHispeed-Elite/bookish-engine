@@ -1,10 +1,21 @@
 var name, user,  level, levelTotal;
 
+var proficiencyStat = 0;
+
 var weight;
 
 var Barbarian, Bard, Cleric, Druid, Fighter, Monk, Paladin, Ranger, Rogue, Sorcerer, Warlock, Wizard;
 
 var classLevel = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+var STRSaving = 0;
+var DEXSaving = 0;
+var CONSaving = 0;
+var INTSaving = 0;
+var WISSaving = 0;
+var CHASaving = 0;
+
+var startingClass;
 
 function setName(){
  name = document.getElementById("Name").value
@@ -100,6 +111,9 @@ function levelSetup(classVersion) {
         console.log(level);
 
         levelTotal = level;
+
+        proficiency();
+        //SavingThrows();
 
         document.getElementById("Total").innerText = levelTotal;
     }else {
@@ -220,5 +234,180 @@ function youFat() {
         weight *= Math.floor(Math.random() * 6) + 2;
         console.log(weight);
         document.getElementById("Weight").innerText = weight + " Lbs";
+    }
+}
+
+function proficiency() {
+    switch(level) {
+        case 1:
+            proficiencyStat = 2;
+
+            if(Barbarian === 1){
+                startingClass = "Barbarian"
+            }else if(Bard === 1) {
+                startingClass = "Bard"
+            }else if(Cleric === 1) {
+                startingClass = "Cleric";
+            }else if(Druid === 1) {
+                startingClass = "Druid"
+            }else if(Fighter === 1) {
+                startingClass = "Fighter";
+            }else if(Monk === 1) {
+                startingClass = "Monk"
+            }else if(Paladin === 1) {
+                startingClass = "Paladin"
+            }else if(Ranger === 1) {
+                startingClass = "Ranger";
+            }else if(Rogue === 1) {
+                startingClass = "Rogue";
+            }else if(Sorcerer === 1) {
+                startingClass = "Sorcerer";
+            }else if(Warlock === 1) {
+                startingClass = "Warlock";
+            }else if(Wizard === 1) {
+                startingClass = "Wizard";
+            }
+
+            SavingThrows(startingClass);
+            console.log(startingClass);
+        break;
+        case 2:
+            proficiencyStat = 2;
+        break;
+        case 3:
+            proficiencyStat = 2;
+        break;
+        case 4:
+            proficiencyStat = 2;
+        break;
+
+        case 5:
+            proficiencyStat = 3;
+            SavingThrows(startingClass);
+        break;
+        case 6:
+            proficiencyStat = 3;
+        break;
+        case 7:
+            proficiencyStat = 3;
+        break;
+        case 8:
+            proficiencyStat = 3;
+        break;
+
+        case 9:
+            proficiencyStat = 4;
+            SavingThrows(startingClass);
+        break;
+        case 10:
+            proficiencyStat = 4;
+        break;
+        case 11:
+            proficiencyStat = 4;
+        break;
+        case 12:
+            proficiencyStat = 4;
+        break;
+
+        case 13:
+            proficiencyStat = 5;
+            SavingThrows(startingClass);
+        break;
+        case 14:
+            proficiencyStat = 5;
+        break;
+        case 15:
+            proficiencyStat = 5;
+        break;
+        case 16:
+            proficiencyStat = 5;
+        break;
+
+        case 17:
+            proficiencyStat = 6;
+            SavingThrows(startingClass);
+        break;
+        case 18:
+            proficiencyStat = 6;
+        break;
+        case 19:
+            proficiencyStat = 6;
+        break;
+        case 20:
+            proficiencyStat = 6;
+        break;
+
+        
+    }
+
+    console.log(proficiencyStat);
+    
+}
+
+function SavingThrows(classA) {
+    let  madness = classA;
+    console.log(madness);
+
+    switch(madness) {
+        case "Barbarian":
+            document.getElementById("STRSaving").innerText = STRSaving + proficiencyStat;
+            document.getElementById("CONSaving").innerText = CONSaving + proficiencyStat;
+        break;
+
+        case "Bard":
+            document.getElementById("DEXSaving").innerText = DEXSaving + proficiencyStat;
+            document.getElementById("CHASaving").innerText = CHASaving + proficiencyStat;
+        break;
+
+        case "Cleric":
+            document.getElementById("WISSaving").innerText = WISSaving + proficiencyStat;
+            document.getElementById("CHASaving").innerText = CHASaving + proficiencyStat;
+        break;
+
+        case "Druid":
+            document.getElementById("INTSaving").innerText = INTSaving + proficiencyStat;
+            document.getElementById("WISSaving").innerText = WISSaving + proficiencyStat;
+        break;
+
+        case "Fighter":
+            document.getElementById("STRSaving").innerText = STRSaving + proficiencyStat;
+            document.getElementById("CONSaving").innerText = CONSaving + proficiencyStat;
+        break;
+
+        case "Monk":
+            document.getElementById("STRSaving").innerText = STRSaving + proficiencyStat;
+            document.getElementById("DEXSaving").innerText = DEXSaving + proficiencyStat;
+        break;
+
+        case "Paladin":
+            document.getElementById("WISSaving").innerText = WISSaving + proficiencyStat;
+            document.getElementById("CHASaving").innerText = CHASaving + proficiencyStat;
+        break;
+
+        case "Ranger":
+            document.getElementById("STRSaving").innerText = STRSaving + proficiencyStat;
+            document.getElementById("DEXSaving").innerText = DEXSaving + proficiencyStat;
+        break;
+
+        case "Rogue":
+            document.getElementById("DEXSaving").innerText = DEXSaving + proficiencyStat;
+            document.getElementById("INTSaving").innerText = INTSaving + proficiencyStat;
+        break;
+
+        case "Sorcerer":
+            document.getElementById("CONSaving").innerText = CONSaving + proficiencyStat;
+            document.getElementById("CHASaving").innerText = CHASaving + proficiencyStat;
+        break;
+
+        case "Warlock":
+            document.getElementById("WISSaving").innerText = WISSaving + proficiencyStat;
+            document.getElementById("CHASaving").innerText = CHASaving + proficiencyStat;
+        break;
+
+        case "Wizard":
+            document.getElementById("INTSaving").innerText = INTSaving + proficiencyStat;
+            document.getElementById("WISSaving").innerText = WISSaving + proficiencyStat;
+        break;
+
     }
 }

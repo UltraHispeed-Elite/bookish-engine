@@ -397,6 +397,10 @@ function increaseStat(Types) {
   
    var test = document.getElementById("001").innerText = AA1;
    console.log(AA1);
+
+   STRSaving = AA1
+
+   console.log(STRSaving);
   }
   
   function DEXAbilityScore() {
@@ -417,6 +421,10 @@ function increaseStat(Types) {
   
    var test2 = document.getElementById("002").innerText = AA1;
    console.log(AA1);
+
+   DEXSaving = AA1;
+
+   console.log(DEXSaving);
   }
   
   
@@ -438,6 +446,10 @@ function increaseStat(Types) {
   
    var test3 = document.getElementById("003").innerText = AA1;
    console.log(AA1);
+
+   CONSaving = AA1;
+
+   console.log(CONSaving);
   }
   
   
@@ -459,6 +471,10 @@ function increaseStat(Types) {
   
    var test4 = document.getElementById("004").innerText = AA1;
    console.log(AA1);
+
+   INTSaving = AA1;
+
+   console.log(INTSaving);
   }
   
   
@@ -480,6 +496,10 @@ function increaseStat(Types) {
   
    var test5 = document.getElementById("005").innerText = AA1;
    console.log(AA1);
+
+   WISSaving = AA1;
+
+   console.log(WISSaving);
   }
   
   
@@ -501,5 +521,9 @@ function increaseStat(Types) {
   
    var test6 = document.getElementById("006").innerText = AA1;
    console.log(AA1);
+
+   CHASaving = AA1;
+
+   console.log(CHASaving);
   }
   
