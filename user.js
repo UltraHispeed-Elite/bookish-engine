@@ -6,6 +6,11 @@ var Barbarian, Bard, Cleric, Druid, Fighter, Monk, Paladin, Ranger, Rogue, Sorce
 
 var classLevel = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
+function setName(){
+ name = document.getElementById("Name").value
+    console.log(name);
+}
+
 function levelSetup(classVersion) {
     let classType = classVersion;
     level = Barbarian + Bard + Cleric + Druid + Fighter + Monk + Paladin + Ranger + Rogue + Sorcerer + Warlock + Wizard;
