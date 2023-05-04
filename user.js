@@ -1,5 +1,7 @@
 var name, user,  level, levelTotal;
 
+var background;
+
 var proficiencyStat = 0;
 
 var weight;
@@ -113,7 +115,7 @@ function levelSetup(classVersion) {
         levelTotal = level;
 
         proficiency();
-        //SavingThrows();
+        skillSet();
 
         document.getElementById("Total").innerText = levelTotal;
     }else {
@@ -410,4 +412,56 @@ function SavingThrows(classA) {
         break;
 
     }
+}
+
+function BackgroundSet() {
+    var bgVal = document.getElementById("Backgrounds").value;
+
+    switch(bgVal) {
+        case "Acolyte":
+            background = "Acolyte";
+        break;
+
+        case "Charlatan":
+            background = "Charlatan";
+        break;
+
+        case "Criminal":
+            background = "Criminal";
+        break;
+
+        case "Entertainer":
+            background = "Entertainer";
+        break;
+
+        case "Folk Hero":
+            background = "Folk Hero"
+        break;
+
+        case "Guild Artisan":
+            background = "Guild Artisan";
+        break;
+
+        case "Hermit":
+            background = "Hermit";
+        break;
+
+        case "Sage":
+            background = "Sage";
+        break;
+
+        case "Sailor":
+            background = "Sailor";
+        break;
+
+        case "Soldier":
+            background = "Soldier";
+        break;
+
+        case "Urchin":
+            background = "Urchin";
+        break;
+    }
+
+
 }

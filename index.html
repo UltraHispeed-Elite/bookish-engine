@@ -52,19 +52,19 @@
 
             <div>
               <p>BackGrounds</p>
-              <select>
+              <select id="Backgrounds" onchange="BackgroundSet()">
                 <option>Pick a Background</option>
-                <option>Acolyte</option>
-                <option>Charlatan</option>
-                <option>Criminal</option>
-                <option>Entertainer</option>
-                <option>Folk Hero</option>
-                <option>Guild Artisan</option>
-                <option>Hermit</option>
-                <option>Sage</option>
-                <option>Sailor</option>
-                <option>Soldier</option>
-                <option>Urchin</option>
+                <option value="Acolyte" id="Acolyte">Acolyte</option>
+                <option value="Charlatan" id="Charlatan">Charlatan</option>
+                <option value="Criminal" id="Criminal">Criminal</option>
+                <option value="Entertainer" id="Entertainer">Entertainer</option>
+                <option value="Folk Hero" id="Folk Hero">Folk Hero</option>
+                <option value="Guild Artisan" id="Guild Artisan">Guild Artisan</option>
+                <option value="Hermit" id="Hermit">Hermit</option>
+                <option value="Sage" id="Sage">Sage</option>
+                <option value="Sailor" id="Sailor">Sailor</option>
+                <option value="Soldier" id="Soldier">Soldier</option>
+                <option value="Urchin" id="Urchin">Urchin</option>
               </select>
             </div>
 
@@ -258,6 +258,63 @@
           <p id="WISSaving"></p>
           <p>Charisma</p>
           <p id="CHASaving"></p>
+        </div>
+
+        <div>
+          <p>Skills</p>
+          <input type="checkbox" id="Acrobatics">
+          <label for="Acrobatics">Acrobatics</label>
+
+          <input type="checkbox" id="Animal_Handling">
+          <label for="Animal_Handling">Animal Handling</label>
+
+          <input type="checkbox" id="Arcana">
+          <label for="Arcana">Arcana</label>
+
+          <input type="checkbox" id="Athletics">
+          <label for="ATheletics">Atheletics</label>
+
+          <input type="checkbox" id="Deception">
+          <label for="Deception">Deception</label>
+
+          <input type="checkbox" id="History">
+          <label for="History">History</label>
+
+          <input type="checkbox" id="Insight">
+          <label for="Insight">Insight</label>
+
+          <input type="checkbox" id="Intimidation">
+          <label for="Intimidation">Intimidation</label>
+
+          <input type="checkbox" id="Investigation">
+          <label for="Investigation">Investigation</label>
+
+          <input type="checkbox" id="Medicine">
+          <label for="Medicine">Medicine</label>
+
+          <input type="checkbox" id="Nature">
+          <label for="Nature">Nature</label>
+
+          <input type="checkbox" id="Perception">
+          <label for="Perception">Perception</label>
+
+          <input type="checkbox" id="Performance">
+          <label for="Performance">Performance</label>
+
+          <input type="checkbox" id="Persuasion">
+          <label for="Persuasion">Persuasion</label>
+
+          <input type="checkbox" id="Religion">
+          <label for="Religion">Religion</label>
+
+          <input type="checkbox" id="Sleight_of_Hand">
+          <label for="Sleight_of_Hand">Sleight of Hand</label>
+
+          <input type="checkbox" id="Stealth">
+          <label for="Stealth">Stealth</label>
+
+          <input type="checkbox" id="Survival">
+          <label for="Survival">Survival</label>
         </div>
     </body>
 </html>
