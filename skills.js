@@ -536,3 +536,285 @@ function skillSet() {
         break;
     }
 }
+
+function limitUpdate() {
+    limit++;
+
+    switch(startingClass) {
+        case "Barbarian":
+            if(limit === 2) {
+                document.getElementById("Acrobatics").disabled = true;
+                document.getElementById("Animal_Handling").disabled = true;
+                document.getElementById("Arcana").disabled = true;
+                document.getElementById("Athletics").disabled = true;
+                document.getElementById("Deception").disabled = true;
+                document.getElementById("History").disabled = true;
+                document.getElementById("Insight").disabled = true;
+                document.getElementById("Intimidation").disabled = true;
+                document.getElementById("Investigation").disabled = true;
+                document.getElementById("Medicine").disabled = true;
+                document.getElementById("Nature").disabled = true;
+                document.getElementById("Perception").disabled = true;
+                document.getElementById("Performance").disabled = true;
+                document.getElementById("Persuasion").disabled = true;
+                document.getElementById("Religion").disabled = true;
+                document.getElementById("Sleight_of_Hand").disabled = true;
+                document.getElementById("Stealth").disabled = true;
+                document.getElementById("Survival").disabled = true;
+            }
+        break;
+
+        case "Bard":
+            if(limit === 3) {
+                document.getElementById("Acrobatics").disabled = true;
+                document.getElementById("Animal_Handling").disabled = true;
+                document.getElementById("Arcana").disabled = true;
+                document.getElementById("Athletics").disabled = true;
+                document.getElementById("Deception").disabled = true;
+                document.getElementById("History").disabled = true;
+                document.getElementById("Insight").disabled = true;
+                document.getElementById("Intimidation").disabled = true;
+                document.getElementById("Investigation").disabled = true;
+                document.getElementById("Medicine").disabled = true;
+                document.getElementById("Nature").disabled = true;
+                document.getElementById("Perception").disabled = true;
+                document.getElementById("Performance").disabled = true;
+                document.getElementById("Persuasion").disabled = true;
+                document.getElementById("Religion").disabled = true;
+                document.getElementById("Sleight_of_Hand").disabled = true;
+                document.getElementById("Stealth").disabled = true;
+                document.getElementById("Survival").disabled = true;
+            }
+        break;
+
+        case "Cleric":
+            if(limit === 2) {
+                document.getElementById("Acrobatics").disabled = true;
+                document.getElementById("Animal_Handling").disabled = true;
+                document.getElementById("Arcana").disabled = true;
+                document.getElementById("Athletics").disabled = true;
+                document.getElementById("Deception").disabled = true;
+                document.getElementById("History").disabled = true;
+                document.getElementById("Insight").disabled = true;
+                document.getElementById("Intimidation").disabled = true;
+                document.getElementById("Investigation").disabled = true;
+                document.getElementById("Medicine").disabled = true;
+                document.getElementById("Nature").disabled = true;
+                document.getElementById("Perception").disabled = true;
+                document.getElementById("Performance").disabled = true;
+                document.getElementById("Persuasion").disabled = true;
+                document.getElementById("Religion").disabled = true;
+                document.getElementById("Sleight_of_Hand").disabled = true;
+                document.getElementById("Stealth").disabled = true;
+                document.getElementById("Survival").disabled = true;
+            }
+        break;
+
+        case "Druid":
+            if(limit === 2) {
+                document.getElementById("Acrobatics").disabled = true;
+                document.getElementById("Animal_Handling").disabled = true;
+                document.getElementById("Arcana").disabled = true;
+                document.getElementById("Athletics").disabled = true;
+                document.getElementById("Deception").disabled = true;
+                document.getElementById("History").disabled = true;
+                document.getElementById("Insight").disabled = true;
+                document.getElementById("Intimidation").disabled = true;
+                document.getElementById("Investigation").disabled = true;
+                document.getElementById("Medicine").disabled = true;
+                document.getElementById("Nature").disabled = true;
+                document.getElementById("Perception").disabled = true;
+                document.getElementById("Performance").disabled = true;
+                document.getElementById("Persuasion").disabled = true;
+                document.getElementById("Religion").disabled = true;
+                document.getElementById("Sleight_of_Hand").disabled = true;
+                document.getElementById("Stealth").disabled = true;
+                document.getElementById("Survival").disabled = true;
+            }
+        break;
+
+        case "Fighter":
+            if(limit === 2) {
+                document.getElementById("Acrobatics").disabled = true;
+                document.getElementById("Animal_Handling").disabled = true;
+                document.getElementById("Arcana").disabled = true;
+                document.getElementById("Athletics").disabled = true;
+                document.getElementById("Deception").disabled = true;
+                document.getElementById("History").disabled = true;
+                document.getElementById("Insight").disabled = true;
+                document.getElementById("Intimidation").disabled = true;
+                document.getElementById("Investigation").disabled = true;
+                document.getElementById("Medicine").disabled = true;
+                document.getElementById("Nature").disabled = true;
+                document.getElementById("Perception").disabled = true;
+                document.getElementById("Performance").disabled = true;
+                document.getElementById("Persuasion").disabled = true;
+                document.getElementById("Religion").disabled = true;
+                document.getElementById("Sleight_of_Hand").disabled = true;
+                document.getElementById("Stealth").disabled = true;
+                document.getElementById("Survival").disabled = true;
+            }
+        break;
+
+        case "Monk":
+            if(limit === 2) {
+                document.getElementById("Acrobatics").disabled = true;
+                document.getElementById("Animal_Handling").disabled = true;
+                document.getElementById("Arcana").disabled = true;
+                document.getElementById("Athletics").disabled = true;
+                document.getElementById("Deception").disabled = true;
+                document.getElementById("History").disabled = true;
+                document.getElementById("Insight").disabled = true;
+                document.getElementById("Intimidation").disabled = true;
+                document.getElementById("Investigation").disabled = true;
+                document.getElementById("Medicine").disabled = true;
+                document.getElementById("Nature").disabled = true;
+                document.getElementById("Perception").disabled = true;
+                document.getElementById("Performance").disabled = true;
+                document.getElementById("Persuasion").disabled = true;
+                document.getElementById("Religion").disabled = true;
+                document.getElementById("Sleight_of_Hand").disabled = true;
+                document.getElementById("Stealth").disabled = true;
+                document.getElementById("Survival").disabled = true;
+            }
+        break;
+
+        case "Paladin":
+            if(limit === 2) {
+                document.getElementById("Acrobatics").disabled = true;
+                document.getElementById("Animal_Handling").disabled = true;
+                document.getElementById("Arcana").disabled = true;
+                document.getElementById("Athletics").disabled = true;
+                document.getElementById("Deception").disabled = true;
+                document.getElementById("History").disabled = true;
+                document.getElementById("Insight").disabled = true;
+                document.getElementById("Intimidation").disabled = true;
+                document.getElementById("Investigation").disabled = true;
+                document.getElementById("Medicine").disabled = true;
+                document.getElementById("Nature").disabled = true;
+                document.getElementById("Perception").disabled = true;
+                document.getElementById("Performance").disabled = true;
+                document.getElementById("Persuasion").disabled = true;
+                document.getElementById("Religion").disabled = true;
+                document.getElementById("Sleight_of_Hand").disabled = true;
+                document.getElementById("Stealth").disabled = true;
+                document.getElementById("Survival").disabled = true;
+            }
+        break;
+
+        case "Ranger":
+            if(limit === 3) {
+                document.getElementById("Acrobatics").disabled = true;
+                document.getElementById("Animal_Handling").disabled = true;
+                document.getElementById("Arcana").disabled = true;
+                document.getElementById("Athletics").disabled = true;
+                document.getElementById("Deception").disabled = true;
+                document.getElementById("History").disabled = true;
+                document.getElementById("Insight").disabled = true;
+                document.getElementById("Intimidation").disabled = true;
+                document.getElementById("Investigation").disabled = true;
+                document.getElementById("Medicine").disabled = true;
+                document.getElementById("Nature").disabled = true;
+                document.getElementById("Perception").disabled = true;
+                document.getElementById("Performance").disabled = true;
+                document.getElementById("Persuasion").disabled = true;
+                document.getElementById("Religion").disabled = true;
+                document.getElementById("Sleight_of_Hand").disabled = true;
+                document.getElementById("Stealth").disabled = true;
+                document.getElementById("Survival").disabled = true;
+            }
+        break;
+
+        case "Rogue":
+            if(limit === 4) {
+                document.getElementById("Acrobatics").disabled = true;
+                document.getElementById("Animal_Handling").disabled = true;
+                document.getElementById("Arcana").disabled = true;
+                document.getElementById("Athletics").disabled = true;
+                document.getElementById("Deception").disabled = true;
+                document.getElementById("History").disabled = true;
+                document.getElementById("Insight").disabled = true;
+                document.getElementById("Intimidation").disabled = true;
+                document.getElementById("Investigation").disabled = true;
+                document.getElementById("Medicine").disabled = true;
+                document.getElementById("Nature").disabled = true;
+                document.getElementById("Perception").disabled = true;
+                document.getElementById("Performance").disabled = true;
+                document.getElementById("Persuasion").disabled = true;
+                document.getElementById("Religion").disabled = true;
+                document.getElementById("Sleight_of_Hand").disabled = true;
+                document.getElementById("Stealth").disabled = true;
+                document.getElementById("Survival").disabled = true;
+            }
+        break;
+
+        case "Sorcerer":
+            if(limit === 2) {
+                document.getElementById("Acrobatics").disabled = true;
+                document.getElementById("Animal_Handling").disabled = true;
+                document.getElementById("Arcana").disabled = true;
+                document.getElementById("Athletics").disabled = true;
+                document.getElementById("Deception").disabled = true;
+                document.getElementById("History").disabled = true;
+                document.getElementById("Insight").disabled = true;
+                document.getElementById("Intimidation").disabled = true;
+                document.getElementById("Investigation").disabled = true;
+                document.getElementById("Medicine").disabled = true;
+                document.getElementById("Nature").disabled = true;
+                document.getElementById("Perception").disabled = true;
+                document.getElementById("Performance").disabled = true;
+                document.getElementById("Persuasion").disabled = true;
+                document.getElementById("Religion").disabled = true;
+                document.getElementById("Sleight_of_Hand").disabled = true;
+                document.getElementById("Stealth").disabled = true;
+                document.getElementById("Survival").disabled = true;
+            }
+        break;
+
+        case "Warlock":
+            if(limit === 2) {
+                document.getElementById("Acrobatics").disabled = true;
+                document.getElementById("Animal_Handling").disabled = true;
+                document.getElementById("Arcana").disabled = true;
+                document.getElementById("Athletics").disabled = true;
+                document.getElementById("Deception").disabled = true;
+                document.getElementById("History").disabled = true;
+                document.getElementById("Insight").disabled = true;
+                document.getElementById("Intimidation").disabled = true;
+                document.getElementById("Investigation").disabled = true;
+                document.getElementById("Medicine").disabled = true;
+                document.getElementById("Nature").disabled = true;
+                document.getElementById("Perception").disabled = true;
+                document.getElementById("Performance").disabled = true;
+                document.getElementById("Persuasion").disabled = true;
+                document.getElementById("Religion").disabled = true;
+                document.getElementById("Sleight_of_Hand").disabled = true;
+                document.getElementById("Stealth").disabled = true;
+                document.getElementById("Survival").disabled = true;
+            }
+        break;
+
+        case "Wizard":
+            if(limit === 2) {
+                document.getElementById("Acrobatics").disabled = true;
+                document.getElementById("Animal_Handling").disabled = true;
+                document.getElementById("Arcana").disabled = true;
+                document.getElementById("Athletics").disabled = true;
+                document.getElementById("Deception").disabled = true;
+                document.getElementById("History").disabled = true;
+                document.getElementById("Insight").disabled = true;
+                document.getElementById("Intimidation").disabled = true;
+                document.getElementById("Investigation").disabled = true;
+                document.getElementById("Medicine").disabled = true;
+                document.getElementById("Nature").disabled = true;
+                document.getElementById("Perception").disabled = true;
+                document.getElementById("Performance").disabled = true;
+                document.getElementById("Persuasion").disabled = true;
+                document.getElementById("Religion").disabled = true;
+                document.getElementById("Sleight_of_Hand").disabled = true;
+                document.getElementById("Stealth").disabled = true;
+                document.getElementById("Survival").disabled = true;
+            }
+        break;
+    }
+}
