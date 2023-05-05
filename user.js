@@ -446,6 +446,14 @@ function BackgroundSet() {
             background = "Hermit";
         break;
 
+        case "Noble":
+            background = "Noble";
+        break;
+
+        case "Outlander":
+            background = "Outlander";
+        break;
+
         case "Sage":
             background = "Sage";
         break;
@@ -462,6 +470,8 @@ function BackgroundSet() {
             background = "Urchin";
         break;
     }
+
+    backgroundSkill();
 
 
 }
